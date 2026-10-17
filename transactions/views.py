@@ -16,6 +16,7 @@ from rest_framework.exceptions import ValidationError
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.authentication import SessionAuthentication, TokenAuthentication
 
 from accounts.models import BankAccount
 from .models import Transaction
@@ -63,6 +64,7 @@ def transaction_response(message, records, account=None):
 
 
 class DepositView(APIView):
+    authentication_classes = [SessionAuthentication, TokenAuthentication]
     permission_classes = [IsAuthenticated]
 
     def post(self, request):

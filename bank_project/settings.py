@@ -110,8 +110,8 @@ DAILY_WITHDRAWAL_LIMIT = '50000.00'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
@@ -122,3 +122,6 @@ REST_FRAMEWORK = {
     ),
     'PAGE_SIZE': 10,
 }
+
+LOGIN_REDIRECT_URL = '/api/profile/'
+LOGOUT_REDIRECT_URL = '/api/profile/'

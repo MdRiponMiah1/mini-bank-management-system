@@ -1,5 +1,7 @@
 # Mini Bank Management System API
 
+A learning project that demonstrates core banking workflows through a REST API.
+
 A RESTful banking API built with **Django** and **Django REST Framework (DRF)**. The project demonstrates customer authentication, personal bank accounts, deposits, withdrawals, transfers, transaction history, date filtering, daily withdrawal limits, and CSV statements.
 
 > **Project status:** Educational assignment. This project is not a production-ready banking system and must not be used to handle real money or sensitive customer data.
@@ -458,7 +460,7 @@ These are educational application rules, not a guarantee of production-grade fin
 
 ## GitHub Preparation
 
-Before pushing the project to a public repository:
+Use this checklist before publishing updates to your repository:
 
 1. Review `.gitignore` and confirm that it excludes virtual environments, local database files, Python caches, and secrets.
 2. Check whether a database or secret has already been tracked by Git; adding a filename to `.gitignore` does not remove a file that is already tracked.
